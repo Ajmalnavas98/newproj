@@ -1,0 +1,26 @@
+<html ng-app="FinalAPI">
+ <head>
+   <title> Front-end & Back-end Connections</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+ </head>
+
+ <body ng-controller="testController">
+
+	 <h2> Questions and Answers DB</h2>
+	  <button ng-click="getRequest()">questions</button>
+	  <button ng-click="getRequest1()">answers</button>
+
+    <script src="index1.js">
+    </script>
+
+	  <table border="1">
+	   <tbody ng-repeat="i in response">
+		<tr>
+		 <td> {{i.id}} </td>
+		 <td> {{i.quest_text}} </td>
+		</tr>
+	   </tbody>
+	  </table>
+ </body>
+ </html>
